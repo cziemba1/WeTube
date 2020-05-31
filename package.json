@@ -1,0 +1,14 @@
+{
+  "name": "we-tube",
+  "version": "1.0.0",
+  "description": "Cloning Youtube with Vainilla y NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Claudia Ziemba",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
