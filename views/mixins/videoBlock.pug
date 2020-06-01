@@ -1,0 +1,7 @@
+mixin videoBlock(video= {})
+    .videoBlock
+        a(href=`/videos/${video.id}`)
+            video.videoBlock__thumbnail(width='320', height='240', autoplay="", controls="")
+                source(src=video.videoFile)
+            h4.videoBlock__title=video.title
+            h6.videoBlock__views=video.views
