@@ -4,7 +4,7 @@
   "description": "Cloning Youtube with Vainilla y NodeJs",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node app.js"
+    "dev:server": "babel-node app.js"
   },
   "author": "Claudia Ziemba",
   "license": "ISC",
@@ -20,6 +20,8 @@
     "mongoose": "^5.9.16",
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
-    "pug": "^3.0.0"
+    "pug": "^3.0.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   }
 }

@@ -7,7 +7,7 @@ header.header
             input(type="text", placeholder="Search for..." name="term")
     .header_colum
         ul
-            if !user
+            if !user.isAuthenticated
                 li
                     a(href="/join") Join
                 li

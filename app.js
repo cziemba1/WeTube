@@ -21,6 +21,10 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+/*------ Locals ------*/
+app.use(localsMiddleware);
+app.use("/uploads", express.static("uploads"));
+
 /*------ Router ------*/
 app.use("/", globalRouter);
 app.use("/users", userRouter);
@@ -28,10 +32,6 @@ app.use("/videos", videoRouter);
 
 /*------ App Set ------*/
 app.set("view engine", "pug");
-
-/*------ Locals ------*/
-app.use(localsMiddleware);
-app.use("/uploads", express.static("uploads"));
 
 /*------ Start application------*/
 const PORT = process.env.PORT || 3000;

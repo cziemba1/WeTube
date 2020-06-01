@@ -46,7 +46,6 @@ export const postUpload = async (req, res) => {
     title,
     description,
   });
-  console.log(newVideo);
   res.redirect(`/videos/${newVideo.id}`);
 };
 /*------DETAILS VIDEO Controller------*/
