@@ -3,9 +3,10 @@ DOCTYPE
         head
             script(src="https://kit.fontawesome.com/33e7d1d044.js", crossorigin="anonymous")
             title #{pageTitle} | #{siteName}
+            link(rel="stylesheet", href="/static/styles.css")
         body
             include ../partials/header
             main
                 block content
-            footer
-                include ../partials/footer
+            include ../partials/footer
+            script(src="/static/main.js", crossorigin="anonymous")
