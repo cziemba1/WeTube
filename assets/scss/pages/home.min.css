@@ -1,0 +1,1 @@
+.home-videos{display:grid;grid-template-columns:repeat(6, minmax(150px, 1fr));grid-gap:30px}.home-videos .videoBlock:first-child,.home-videos .videoBlock:nth-child(2){grid-column:span 3}.home-videos .videoBlock:nth-child(3),.home-videos .videoBlock:nth-child(4),.home-videos .videoBlock:nth-child(5){grid-column:span 2}

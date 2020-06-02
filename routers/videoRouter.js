@@ -19,7 +19,7 @@ videoRouter.post("/upload", uploadVideo, postUpload);
 
 videoRouter.get("/:id", videoDetail);
 
-videoRouter.get("/:id/edit");
+videoRouter.get("/:id/edit", getEditVideo);
 videoRouter.post("/:id/edit", postEditVideo);
 
 videoRouter.get("/:id/delete", deleteVideo);

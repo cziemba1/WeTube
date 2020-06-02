@@ -11,6 +11,7 @@ import videoRouter from "./routers/videoRouter";
 import userRouter from "./routers/userRouter";
 import modelVideo from "./models/Video";
 import modelComment from "./models/Comment";
+import modelUser from "./models/User";
 import { localsMiddleware } from "./middleware";
 const app = express();
 
@@ -24,6 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 /*------ Locals ------*/
 app.use(localsMiddleware);
 app.use("/uploads", express.static("uploads"));
+app.use("/static", express.static("static"));
 
 /*------ Router ------*/
 app.use("/", globalRouter);
